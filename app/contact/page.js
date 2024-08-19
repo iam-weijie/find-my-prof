@@ -1,7 +1,6 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
-import "boxicons";
 import { useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
