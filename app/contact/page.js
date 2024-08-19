@@ -1,11 +1,53 @@
+"use client";
+
+import emailjs from "@emailjs/browser";
+import { useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
+const publicKey = "OcY4_jUcIu4KDpLEI";
+const serviceID = "service_u48x7o7";
+const templateID = "template_zci1a7u";
+
 export default function Contact() {
+  const formRef = useRef();
+
+  useEffect(() => {
+    emailjs.init(publicKey);
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const submitBtn = formRef.current.querySelector(".submit-btn");
+    const emailInput = formRef.current.querySelector("#user_email");
+    const nameInput = formRef.current.querySelector("#user_name");
+    const messageInput = formRef.current.querySelector("#message");
+
+    submitBtn.innerText = "One moment...";
+
+    const inputFields = {
+      name: nameInput.value,
+      email: emailInput.value,
+      message: messageInput.value,
+    };
+
+    emailjs.send(serviceID, templateID, inputFields).then(
+      () => {
+        submitBtn.innerText = "Sent successfully";
+        formRef.current.reset();
+      },
+      (error) => {
+        console.log(error);
+        submitBtn.innerText = "Something went wrong";
+      }
+    );
+  };
+
   return (
     <main className={styles.main}>
       <div>
         <h1>Contact Me</h1>
-        <form id="contact-form">
+        <form id="contact-form" ref={formRef} onSubmit={handleSubmit}>
           <label htmlFor="user_name">Name</label>
           <input
             type="text"

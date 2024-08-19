@@ -81,3 +81,9 @@
   color: #181818;
   font-size: 30px;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    font-size: 12px;
+  }
+}
