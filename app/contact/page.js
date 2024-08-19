@@ -1,6 +1,7 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
+import "boxicons";
 import { useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
@@ -89,8 +90,8 @@ export default function Contact() {
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/iam._.weijie/">
-              <i className="bx bxl-instagram"></i>
+            <a href="https://x.com/iam_weijie">
+              <i class="bx bxl-twitter"></i>
             </a>
           </li>
         </ul>
