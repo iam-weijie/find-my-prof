@@ -14,7 +14,7 @@ The project uses the following stack:
 
 ## Features
 
-- **AI Assistant**: Ask our AI assistant specific questions about professors, such as "Does Professor X give quizzes?" or "What is Professor Y's teaching style?" and get accurate, data-driven answers.
+- **AI Assistant**: Ask our AI assistant specific questions about professors, such as "What is Professor X's teaching style?" or "Which professors explain concepts clearly?" and get accurate, data-driven answers.
 - **Comprehensive Insights**: Go beyond ratings with detailed information on teaching methods, exam formats, and more, all derived from real student feedback.
 
 For a full demo, check out my LinkedIn post [here]()
