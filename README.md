@@ -1,6 +1,6 @@
 # Find My Prof
 
-Welcome to **Find My Prof** – a platform designed to help McGill students make informed decisions about their classes by providing detailed insights into professors' teaching styles, use of quizzes, and more. Our AI-powered assistant utilizes data parsed from [Rate My Professors]() to answer your specific queries about professors.
+Welcome to **Find My Prof** – a platform designed to help McGill students make informed decisions about their classes by providing detailed insights into professors' teaching styles, use of quizzes, and more. Our AI-powered assistant utilizes data parsed from [Rate My Professors](https://www.ratemyprofessors.com/) to answer your specific queries about professors.
 
 ## Overview
 
