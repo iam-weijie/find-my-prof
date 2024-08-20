@@ -9,7 +9,7 @@ export default function Home() {
           <a href="/">
             <Image
               id="logo"
-              src="/Martlet-glasses.png"
+              src="/RedBird.png"
               alt="Find My Prof"
               width={50}
               height={50}
