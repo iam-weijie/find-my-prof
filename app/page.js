@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -6,11 +7,12 @@ export default function Home() {
       <ul>
         <li>
           <a href="/">
-            <img
+            <Image
               id="logo"
-              src="Martlet-glasses.png"
+              src="/Martlet-glasses.png"
               alt="Find My Prof"
-              style={{ width: "50px", height: "auto" }}
+              width={50}
+              height={50}
             />
           </a>
         </li>
