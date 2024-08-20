@@ -12,14 +12,14 @@
   align-items: center;
 }
 .main > div {
-  background: #fefefa;
+  background: #333533;
   padding: 2.5em;
   border-radius: 10px;
   box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
 }
 .main h1 {
   font-size: 2.5em;
-  color: #181818;
+  color: #eee;
 }
 .main form {
   display: flex;
@@ -35,7 +35,7 @@
   width: 100%;
   border-radius: 5px;
   margin: 0.5em 0 1em 0;
-  background: #eee;
+  background: black;
   color: #969696;
 }
 .main label {

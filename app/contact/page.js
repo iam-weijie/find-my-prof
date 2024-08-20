@@ -80,17 +80,17 @@ export default function Contact() {
         <ul>
           <li>
             <a href="https://www.linkedin.com/in/weijiew/">
-              <i className="bx bxl-linkedin"></i>
+              <i className="bx bxl-linkedin" style={{ color: "#eeeeee" }}></i>
             </a>
           </li>
           <li>
             <a href="https://github.com/iam-weijie">
-              <i className="bx bxl-github"></i>
+              <i className="bx bxl-github" style={{ color: "#eeeeee" }}></i>
             </a>
           </li>
           <li>
             <a href="https://x.com/iam_weijie">
-              <i class="bx bxl-twitter"></i>
+              <i className="bx bxl-twitter" style={{ color: "#eeeeee" }}></i>
             </a>
           </li>
         </ul>
