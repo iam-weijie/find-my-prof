@@ -1,3 +1,5 @@
+@import url("https://unpkg.com/boxicons/css/boxicons.min.css");
+
 .main {
   position: relative;
   overflow: hidden;
@@ -9,4 +11,26 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("/MadeByMcGill.gif");
+}
+
+.main ul {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.main ul li {
+  list-style-type: none;
+  color: #eee;
+  text-align: center;
+  width: 100px;
+}
+.main ul li a {
+  font-size: 35px;
+}
+.main ul li p {
+  font-size: 20px;
+  display: none;
+}
+.main ul li :hover p {
+  display: block;
 }
