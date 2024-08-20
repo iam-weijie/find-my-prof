@@ -34,3 +34,17 @@
 .main ul li :hover p {
   display: block;
 }
+
+.main div {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: #fff;
+}
+.main div h1 {
+  font-size: 50px;
+}
+.main div p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}

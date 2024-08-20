@@ -1,4 +1,6 @@
+import Button from "@mui/material/Button";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -41,6 +43,20 @@ export default function Home() {
           </a>
         </li>
       </ul>
+      <div>
+        <h1>Welcome McGillians!</h1>
+        <p>This is where you find the right professor for your courses.</p>
+        <Link href="/">
+          <Button
+            variant="contained"
+            style={{
+              backgroundImage: "linear-gradient(30deg, #ff4000, #fd9815)",
+            }}
+          >
+            Start Looking
+          </Button>
+        </Link>
+      </div>
     </main>
   );
 }
