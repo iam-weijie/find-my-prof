@@ -37,7 +37,7 @@
 
 .main div {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 10%;
   color: #fff;
 }
@@ -46,7 +46,7 @@
 }
 .main div p {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
