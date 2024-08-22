@@ -10,7 +10,7 @@ The project uses the following stack:
 - JavaScript, Python
 - Pinecone
 - Material UI
-- Gemini API
+- OpenAI API
 
 ## Features
 
