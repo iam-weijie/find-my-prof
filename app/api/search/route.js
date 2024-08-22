@@ -1,6 +1,6 @@
+import { Pinecone } from "@pinecone-database/pinecone";
 import { NextResponse } from "next/server";
 import OpenAI from "openai";
-import Pinecone from "pinecone";
 
 const systemPrompt = `You are a "Find My Prof" AI agent designed to assist students in finding the ideal professor based on their specific needs and queries. You gather and analyze data from RateMyProfessors.com, focusing on aspects like teaching style, grading practices, course difficulty, student feedback, and other relevant factors.
 
@@ -51,10 +51,9 @@ export async function POST(req) {
     stream: true,
   });
 
-  const stream = ReadableStream({
+  const stream = new ReadableStream({
     async start(controller) {
       const encoder = new TextEncoder();
-
       try {
         for await (const chunk of completion) {
           const content = chunk.choices[0]?.delta?.content;
