@@ -19,13 +19,13 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <a href="/search">
+          <a href="/">
             <i className="bx bxs-home"></i>
             <p>Home</p>
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/search">
             <i className="bx bxs-file-find"></i>
             <p>Search</p>
           </a>
