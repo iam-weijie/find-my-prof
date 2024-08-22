@@ -19,7 +19,7 @@ export default function Home() {
           </a>
         </li>
         <li>
-          <a href="/">
+          <a href="/search">
             <i className="bx bxs-home"></i>
             <p>Home</p>
           </a>
@@ -46,7 +46,7 @@ export default function Home() {
       <div>
         <h1>Welcome McGillians!</h1>
         <p>This is where you find the right professor for your courses.</p>
-        <Link href="/">
+        <Link href="/search">
           <Button
             variant="contained"
             style={{
