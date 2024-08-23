@@ -59,15 +59,9 @@ export default function Search() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      bgcolor="black"
     >
-      <Stack
-        direction={"column"}
-        width="500px"
-        height="700px"
-        border="1px solid black"
-        p={2}
-        spacing={3}
-      >
+      <Stack direction={"column"} width="600px" height="700px" spacing={3}>
         <Stack
           direction={"column"}
           spacing={2}
@@ -84,14 +78,10 @@ export default function Search() {
               }
             >
               <Box
-                bgcolor={
-                  message.role === "assistant"
-                    ? "primary.main"
-                    : "secondary.main"
-                }
-                color="white"
-                borderRadius={16}
-                p={3}
+                bgcolor={message.role === "assistant" ? "black" : "#1f1f1f"}
+                color={message.role === "assistant" ? "#707070" : "#fafafa"}
+                borderRadius={1}
+                p={1.2}
               >
                 {message.content}
               </Box>
@@ -104,9 +94,15 @@ export default function Search() {
             fullWidth
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            inputProps={{ style: { color: "#fafafa" } }}
+            color="grey"
           />
-          <Button variant="contained" onClick={sendMessage}>
-            Send
+          <Button
+            variant="text"
+            onClick={sendMessage}
+            sx={{ color: "grey", fontSize: "1.2rem" }}
+          >
+            →
           </Button>
         </Stack>
       </Stack>
