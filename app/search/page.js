@@ -154,10 +154,13 @@ export default function Search() {
           <Stack direction={"row"} spacing={2}>
             <TextField
               label="Message"
+              variant="filled"
               fullWidth
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               inputProps={{ style: { color: "#fafafa" } }}
+              InputLabelProps={{ style: { color: "#707070" } }}
+              sx={{ backgroundColor: "#1f1f1f" }}
               color="grey"
             />
             <Button
