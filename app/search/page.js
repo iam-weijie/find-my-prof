@@ -3,6 +3,7 @@
 import { Box, Button, Stack, TextField } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
+import styles from "./page.module.css";
 
 export default function Search() {
   const [messages, setMessages] = useState([
@@ -53,107 +54,107 @@ export default function Search() {
     });
   };
   return (
-    <Box
-      width="100vw"
-      height="100vh"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-      bgcolor="black"
-    >
-      <ul
-        style={{
-          listStyle: "none",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
+    <main className={styles.main}>
+      <Box
+        width="100vw"
+        height="100vh"
+        display="flex"
+        flexDirection="column"
+        justifyContent="center"
+        alignItems="center"
+        bgcolor="black"
       >
-        <li>
-          <a href="/">
-            <Image
-              id="logo"
-              src="/RedBird.png"
-              alt="Find My Prof"
-              width={50}
-              height={50}
-            />
-          </a>
-        </li>
-        <li>
-          <a href="/">
-            <i className="bx bxs-home"></i>
-            <p>Home</p>
-          </a>
-        </li>
-        <li>
-          <a href="/search">
-            <i className="bx bxs-file-find"></i>
-            <p>Search</p>
-          </a>
-        </li>
-        <li>
-          <a href="/contact">
-            <i className="bx bxs-envelope"></i>
-            <p>Contact</p>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.ratemyprofessors.com/">
-            <i className="bx bxs-chat"></i>
-            <p>RMP</p>
-          </a>
-        </li>
-      </ul>
-
-      <Stack direction={"column"} width="600px" height="700px" spacing={3}>
-        <Stack
-          direction={"column"}
-          spacing={2}
-          flexGrow={1}
-          overflow="auto"
-          maxHeight="100%"
+        <ul
+          style={{
+            listStyle: "none",
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-evenly",
+            width: "105vw",
+            paddingRight: "10px",
+            paddingTop: "12px",
+          }}
         >
-          {messages.map((message, index) => (
-            <Box
-              key={index}
-              display="flex"
-              justifyContent={
-                message.role === "assistant" ? "flex-start" : "flex-end"
-              }
-            >
-              <Box
-                bgcolor={message.role === "assistant" ? "black" : "#1f1f1f"}
-                color={message.role === "assistant" ? "#707070" : "#fafafa"}
-                borderRadius={1}
-                p={1.2}
-              >
-                {message.content}
-              </Box>
-            </Box>
-          ))}
-        </Stack>
-        <Stack direction={"row"} spacing={2}>
-          <TextField
-            label="Message"
-            fullWidth
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            inputProps={{ style: { color: "#fafafa" } }}
-            color="grey"
-          />
-          <Button
-            variant="text"
-            onClick={sendMessage}
-            sx={{ color: "grey", fontSize: "1.2rem" }}
+          <li>
+            <a href="/">
+              <Image
+                id="logo"
+                src="/RedBird.png"
+                alt="Find My Prof"
+                width={50}
+                height={50}
+              />
+            </a>
+          </li>
+          <li>
+            <a>
+              <i className="bx bxs-home"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i className="bx bxs-file-find"></i>
+            </a>
+          </li>
+          <li>
+            <a>
+              <i className="bx bxs-envelope"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.ratemyprofessors.com/">
+              <i className="bx bxs-chat"></i>
+              <p>RMP</p>
+            </a>
+          </li>
+        </ul>
+
+        <Stack direction={"column"} width="600px" height="700px" spacing={3}>
+          <Stack
+            direction={"column"}
+            spacing={2}
+            flexGrow={1}
+            overflow="auto"
+            maxHeight="100%"
           >
-            →
-          </Button>
+            {messages.map((message, index) => (
+              <Box
+                key={index}
+                display="flex"
+                justifyContent={
+                  message.role === "assistant" ? "flex-start" : "flex-end"
+                }
+              >
+                <Box
+                  bgcolor={message.role === "assistant" ? "black" : "#1f1f1f"}
+                  color={message.role === "assistant" ? "#707070" : "#fafafa"}
+                  borderRadius={1}
+                  p={1.2}
+                >
+                  {message.content}
+                </Box>
+              </Box>
+            ))}
+          </Stack>
+          <Stack direction={"row"} spacing={2}>
+            <TextField
+              label="Message"
+              fullWidth
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              inputProps={{ style: { color: "#fafafa" } }}
+              color="grey"
+            />
+            <Button
+              variant="text"
+              onClick={sendMessage}
+              sx={{ color: "grey", fontSize: "1.2rem" }}
+            >
+              →
+            </Button>
+          </Stack>
         </Stack>
-      </Stack>
-    </Box>
+      </Box>
+    </main>
   );
 }
