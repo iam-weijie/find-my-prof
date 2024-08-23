@@ -72,7 +72,7 @@ export default function Search() {
             justifyContent: "space-evenly",
             width: "105vw",
             paddingRight: "10px",
-            paddingTop: "12px",
+            paddingTop: "33px",
           }}
         >
           <li>
@@ -112,7 +112,7 @@ export default function Search() {
           </li>
           <li>
             <a href="https://www.ratemyprofessors.com/">
-              <i className="bx bxs-chat"></i>
+              <i className="bx bxs-chat" style={{ color: "white" }}></i>
               <p>RMP</p>
             </a>
           </li>
