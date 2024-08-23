@@ -88,17 +88,26 @@ export default function Search() {
           </li>
           <li>
             <a>
-              <i className="bx bxs-home"></i>
+              <i
+                className="bx bxs-home "
+                style={{ color: "black !important" }}
+              ></i>
             </a>
           </li>
           <li>
             <a>
-              <i className="bx bxs-file-find"></i>
+              <i
+                className="bx bxs-file-find"
+                style={{ color: "black !important" }}
+              ></i>
             </a>
           </li>
           <li>
             <a>
-              <i className="bx bxs-envelope"></i>
+              <i
+                className="bx bxs-envelope"
+                style={{ color: "black !important" }}
+              ></i>
             </a>
           </li>
           <li>
