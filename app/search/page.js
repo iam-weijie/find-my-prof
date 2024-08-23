@@ -118,7 +118,12 @@ export default function Search() {
           </li>
         </ul>
 
-        <Stack direction={"column"} width="600px" height="700px" spacing={3}>
+        <Stack
+          direction={"column"}
+          width={{ xs: "90vw", sm: "600px" }}
+          height="700px"
+          spacing={3}
+        >
           <Stack
             direction={"column"}
             spacing={2}
