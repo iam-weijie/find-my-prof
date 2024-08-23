@@ -1,6 +1,7 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import styles from "./page.module.css";
 
@@ -44,57 +45,78 @@ export default function Contact() {
   };
 
   return (
-    <main className={styles.main}>
-      <div>
-        <h1>Contact Me</h1>
-        <form id="contact-form" ref={formRef} onSubmit={handleSubmit}>
-          <label htmlFor="user_name">Name</label>
-          <input
-            type="text"
-            id="user_name"
-            name="user_name"
-            placeholder="Your name..."
-            required
+    <>
+      <li
+        style={{
+          position: "absolute",
+          listStyle: "none",
+          left: "12.7%",
+          top: "5.2%",
+        }}
+      >
+        <a href="/">
+          <Image
+            id="logo"
+            src="/RedBird.png"
+            alt="Find My Prof"
+            width={50}
+            height={50}
           />
+        </a>
+      </li>
 
-          <label htmlFor="user_email">Email</label>
-          <input
-            type="email"
-            id="user_email"
-            name="user_email"
-            placeholder="example@gmail.com"
-            required
-          />
-          <label htmlFor="message">Message</label>
-          <textarea
-            type="message"
-            id="message"
-            placeholder="Your message..."
-            required
-          ></textarea>
-          <button type="submit" className="submit-btn">
-            Send
-          </button>
-        </form>
+      <main className={styles.main}>
+        <div>
+          <h1>Contact Me</h1>
+          <form id="contact-form" ref={formRef} onSubmit={handleSubmit}>
+            <label htmlFor="user_name">Name</label>
+            <input
+              type="text"
+              id="user_name"
+              name="user_name"
+              placeholder="Your name..."
+              required
+            />
 
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/weijiew/">
-              <i className="bx bxl-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/iam-weijie">
-              <i className="bx bxl-github"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://x.com/iam_weijie">
-              <i className="bx bxl-twitter"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </main>
+            <label htmlFor="user_email">Email</label>
+            <input
+              type="email"
+              id="user_email"
+              name="user_email"
+              placeholder="example@gmail.com"
+              required
+            />
+            <label htmlFor="message">Message</label>
+            <textarea
+              type="message"
+              id="message"
+              placeholder="Your message..."
+              required
+            ></textarea>
+            <button type="submit" className="submit-btn">
+              Send
+            </button>
+          </form>
+
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/in/weijiew/">
+                <i className="bx bxl-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/iam-weijie">
+                <i className="bx bxl-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/iam_weijie">
+                <i className="bx bxl-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </>
   );
 }
