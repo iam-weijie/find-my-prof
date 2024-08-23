@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Button, Stack, TextField } from "@mui/material";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Search() {
@@ -61,6 +62,53 @@ export default function Search() {
       alignItems="center"
       bgcolor="black"
     >
+      <ul
+        style={{
+          listStyle: "none",
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center",
+          justifyContent: "space-around",
+          width: "100%",
+        }}
+      >
+        <li>
+          <a href="/">
+            <Image
+              id="logo"
+              src="/RedBird.png"
+              alt="Find My Prof"
+              width={50}
+              height={50}
+            />
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <i className="bx bxs-home"></i>
+            <p>Home</p>
+          </a>
+        </li>
+        <li>
+          <a href="/search">
+            <i className="bx bxs-file-find"></i>
+            <p>Search</p>
+          </a>
+        </li>
+        <li>
+          <a href="/contact">
+            <i className="bx bxs-envelope"></i>
+            <p>Contact</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.ratemyprofessors.com/">
+            <i className="bx bxs-chat"></i>
+            <p>RMP</p>
+          </a>
+        </li>
+      </ul>
+
       <Stack direction={"column"} width="600px" height="700px" spacing={3}>
         <Stack
           direction={"column"}
