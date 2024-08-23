@@ -17,7 +17,7 @@ The project uses the following stack:
 - **AI Assistant**: Ask our AI assistant specific questions about professors, such as "What is Professor X's teaching style?" or "Which professors explain concepts clearly?" and get accurate, data-driven answers.
 - **Comprehensive Insights**: Go beyond ratings with detailed information on teaching methods, exam formats, and more, all derived from real student feedback.
 
-For a full demo, check out my LinkedIn post [here]()
+For a full demo, check out my LinkedIn post [here](https://www.linkedin.com/posts/weijiew_ratemyprofessors-ai-mcgill-activity-7232821455225339904-dWc7?utm_source=share&utm_medium=member_desktop)
 
 ## Contributing
 
