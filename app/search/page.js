@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Button, Stack, TextField } from "@mui/material";
+import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "./page.module.css";
@@ -123,6 +123,7 @@ export default function Search() {
           width={{ xs: "90vw", sm: "600px" }}
           height={{ xs: "75vh", sm: "700px" }}
           spacing={3}
+          paddingBottom={2}
         >
           <Stack
             direction={"column"}
@@ -168,6 +169,9 @@ export default function Search() {
             </Button>
           </Stack>
         </Stack>
+        <Typography variant="caption" color="grey" fontStyle="italic">
+          This AI assistant is NOT a certified academic advisor.
+        </Typography>
       </Box>
     </main>
   );
